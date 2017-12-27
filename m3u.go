@@ -1,4 +1,4 @@
-package exportfilters
+package main
 
 import (
 	"fmt"

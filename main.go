@@ -4,9 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-
 	"github.com/nandosousafr/podfeed"
-	"m9d.de/podcast2m3u/exportfilters"
 )
 
 func main() {
@@ -20,6 +18,6 @@ func main() {
 			log.Fatal(err)
 		}
 		fmt.Println(podcast.Title)
-		exportfilters.M3u(podcast)
+		M3u(podcast)
 	} 
 }
