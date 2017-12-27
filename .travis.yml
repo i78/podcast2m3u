@@ -1,0 +1,8 @@
+language: go
+
+before_script:
+  - go get github.com/nandosousafr/podfeed
+
+go:
+  - 1.8
+  - master
