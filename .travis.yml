@@ -3,6 +3,17 @@ language: go
 before_script:
   - go get github.com/nandosousafr/podfeed
 
+script:
+   go build -o podcast2m3u -i .
+
 go:
   - 1.8
   - master
+
+deploy:
+  provider: releases
+  api_key: "$GITHUB_API_KEY"
+  file: "podcast2m3u"
+  skip_cleanup: true
+  on:
+    tags: true
